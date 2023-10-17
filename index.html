@@ -96,44 +96,52 @@ button {
             border: 1px solid tomato;
             padding: 5px;
         }
-
-        .post {
-            display: block;
-        }
-
+		
         .log {
-display:block;}
+display:block;
+width:100%;
+height:50px;}
 
 .logcircle {
-	display:inline-block;
+	display:inline;
+	float:left;
 height: 40px;
             width: 40px;
             background-color: rgb(202, 162, 111);
             border: 5pt solid rgb(144, 102, 80);
             border-radius: 50%;
-            font-size: 10pt;
             text-align: center;
             line-height: 40px;
-            margin: 10px;
-
+			margin:10px;
         }
 
-		.logdate {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	}
+		.logdate {
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	
+		font-size: 10pt;
+		text-decoration:none;}
 		
 	.logtitle {
-		color:mediumblue;
 		display:inline-block;
+		height:50px;
+		vertical-align:middle;
+		color:mediumblue;
 		font-family: papyrus;
 		text-transform: uppercase;
-            font-size: 1em;
+            font-size: .7em;
             font-weight: bold;
+			margin-top:25px;
 			
         }
 
         .draft {
             display: none;
         }
+		
+		.clear {
+  clear: both;
+}
+
 
 
 footer {
@@ -176,29 +184,20 @@ footer {
 	<details open>
 	<summary>
    🪵 Fresh logs pile</summary>
-
+<br>
     <div class="log">
 		<div class="logcircle">
-        <span class="logdate" href="log1.html">09/11</span></div>
-        <a class="logtitle" href="log1.html">A quick stop in the centre of the universe</a>
+  <a class="logdate" href="Log1/index.html">09/11</a></div>
+        <a class="logtitle" href="Log1/index.html">A quick stop in the centre of the universe</a>
     </div>
-
-
-
-    <div class="draft">
-        <span class="log" href="log2.html">12/11</span>
-        <a class="title" href="log2.html">It’s nice to be alone, it’s nice to be together</a>
+<div class="clear"></div>
+<div class="draft">
+		<div class="logcircle">
+        <a class="logdate" href="Log1/index.html">09/11</a></div>
+        <a class="logtitle" href="Log1/index.html">A quick stop in the centre of the universe</a>
     </div>
-
-    <div class="draft">
-        <span class="log" href="log3.html">3</span>
-        <a class="title" href="log3.html">TITLE</a>
-    </div>
-
-    <div class="draft">
-        <span class="log" href="log4.html">4</span>
-        <a class="title" href="log4.html">TITLE</a>
-    </div>
+	
+	
 
 </details>
     <details>
