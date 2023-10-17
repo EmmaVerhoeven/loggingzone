@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🪚Emma's Web Logging Zone</title>
+    <title>🪚 Emma's Web Logging Zone</title>
     <style>
         body {
 			
@@ -102,24 +102,31 @@ button {
         }
 
         .log {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            height: 50px;
-            width: 50px;
+display:block;}
+
+.logcircle {
+	display:inline-block;
+height: 40px;
+            width: 40px;
             background-color: rgb(202, 162, 111);
             border: 5pt solid rgb(144, 102, 80);
             border-radius: 50%;
-            display: inline-block;
-            font-size: 14pt;
+            font-size: 10pt;
             text-align: center;
-            line-height: 50px;
+            line-height: 40px;
             margin: 10px;
 
         }
 
-        .title {
-font-family: papyrus;
-
-            font-size: 1.5em;
+		.logdate {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	}
+		
+	.logtitle {
+		color:mediumblue;
+		display:inline-block;
+		font-family: papyrus;
+		text-transform: uppercase;
+            font-size: 1em;
             font-weight: bold;
 			
         }
@@ -157,7 +164,7 @@ footer {
 
 <body>
 	
-	<span class="forest">🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳</span>
+	<span class="forest">🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳🌲🌳</span>
 
     <h1> 🪚 EMMA's LOGGING ZONE 🪵</h1>
 
@@ -166,14 +173,16 @@ footer {
 
     <hr class="dashed">
 
-	<details>
+	<details open>
 	<summary>
    🪵 Fresh logs pile</summary>
 
     <div class="log">
-        <span class="log" href="Log1/log1.html">09/11</span>
-        <a class="title" href="log1.html">🚂 A quick stop in the centre of the universe</a>
+		<div class="logcircle">
+        <span class="logdate" href="log1.html">09/11</span></div>
+        <a class="logtitle" href="log1.html">A quick stop in the centre of the universe</a>
     </div>
+
 
 
     <div class="draft">
