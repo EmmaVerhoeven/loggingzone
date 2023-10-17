@@ -98,41 +98,53 @@ button {
         }
 		
         .log {
-display:block;
-width:100%;
-height:50px;}
+display:inline-block;
+float:left;
+margin:5px;
+}
 
-.logcircle {
-	display:inline;
-	float:left;
-height: 40px;
-            width: 40px;
-            background-color: rgb(202, 162, 111);
-            border: 5pt solid rgb(144, 102, 80);
-            border-radius: 50%;
+.log {	
+	background-color: burlywood;
+	border: 4pt solid saddlebrown;
+	border-radius: 50%;
             text-align: center;
-            line-height: 40px;
-			margin:10px;
-        }
-
-		.logdate {
-			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	
-		font-size: 10pt;
-		text-decoration:none;}
+			vertical-align: baseline;
+			margin:1px;
+box-shadow:
+0 0 0 1px black
+		}
 		
-	.logtitle {
-		display:inline-block;
-		height:50px;
-		vertical-align:middle;
-		color:mediumblue;
-		font-family: papyrus;
-		text-transform: uppercase;
-            font-size: .7em;
-            font-weight: bold;
-			margin-top:25px;
+		.log.small{
+			height: 40px;
+            width: 40px;
+            line-height: 40px;
+			margin-top:15px;
 			
         }
+		
+		.log.medium {
+			height:50px;
+			width:50px;
+			line-height:50px;
+			
+		}
+		
+		.log.large {
+			height:65px;
+			width:65px;
+			line-height:65px;
+			margin-top:-10px;
+		}
+		
+		
+		
+
+		.logdate {
+			color:mediumblue;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight:bold;
+	font-size: 10pt;}
+		
 
         .draft {
             display: none;
@@ -185,20 +197,53 @@ footer {
 	<summary>
    🪵 Fresh logs pile</summary>
 <br>
-    <div class="log">
+    <div class="log small">
 		<div class="logcircle">
-  <a class="logdate" href="Log1/index.html">09/11</a></div>
-        <a class="logtitle" href="Log1/index.html">A quick stop in the centre of the universe</a>
-    </div>
-<div class="clear"></div>
-<div class="draft">
+			<a class="logdate" href="Log1/index.html">09/11</a></div></div>
+			
+			<div class="log medium">
 		<div class="logcircle">
-        <a class="logdate" href="Log1/index.html">09/11</a></div>
-        <a class="logtitle" href="Log1/index.html">A quick stop in the centre of the universe</a>
-    </div>
-	
-	
+			<a class="logdate" href=""></a></div></div>
+			
+			
+			<div class="log large">
+		<div class="logcircle">
+			<a class="logdate" href=""></a></div></div>
+			
+			
+			<div class="log small">
+		<div class="logcircle">
+			<a class="logdate" href=""></a></div></div>
 
+			
+			<div class="clear"></div>
+			
+
+			
+			<div class="log large">
+		<div class="logcircle">
+			<a class="logdate" href=""></a></div></div>
+			
+			
+			<div class="log large">
+		<div class="logcircle">
+			<a class="logdate" href=""></a></div></div>
+			
+			<div class="log medium">
+		<div class="logcircle">
+			<a class="logdate" href=""></a></div></div>
+			
+			<div class="log large">
+		<div class="logcircle">
+			<a class="logdate" href=""></a></div></div>
+			
+			
+			
+			
+			
+			<div class="clear"></div>
+			
+			
 </details>
     <details>
         <summary>🌲 On logging</summary>
