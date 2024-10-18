@@ -97,6 +97,7 @@
 
             fetch('https://script.google.com/macros/s/AKfycbwilguFZJ3TTQtUzVS7twhZJmVBiBHD0lGlCM17ujyQTRdyJ4h3apZN6Oxt-14dIHqM/exec', {
                 method: 'POST',
+                mode: 'no-cors',  // Added no-cors mode
                 body: JSON.stringify(data),
             })
                 .then(function (response) {
