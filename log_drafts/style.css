@@ -1,0 +1,128 @@
+
+*, *:before, *:after { box-sizing: border-box; }
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #353535;
+    background-color: #e0e0da;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    -webkit-text-size-adjust: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100dvh;
+}
+::selection {
+    background-color: #b1d7ff;
+}
+main {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 0 15px;
+}
+article {
+    outline: none;
+}
+#palm p, #palm ol, #palm ul, #palm pre, #palm blockquote, #palm h1, #palm h2, #palm h3, #palm h4, #palm h5, #palm h6 {
+    margin: 0;
+    padding: 0;
+}
+time {
+    color: rgb(145, 145, 145);
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+a#back {
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 12px;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(170, 170, 170);
+}
+a#back:hover {
+    background-color: rgb(154, 154, 154);
+}
+
+ul#pages {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgb(201, 201, 201);
+}
+ul#pages a {
+    font-size: 15px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    padding: 6px 3px;
+    color: #0148ab;
+    text-decoration: none;
+}
+ul#pages a:hover {
+    background-color: #0000000e;
+}
+ul#pages a .marker {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(234, 234, 234);
+    border: 1px solid rgb(168, 168, 168);
+    display: none;
+}
+.light {
+    color: gray;
+}
+a {
+    color: #0148ab;
+    cursor: pointer;
+}
+
+
+
+blockquote {
+    border-left: 4px solid #ccc;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 16px !important;
+}
+a {
+    color: #353535; 
+}
+#palm {
+    font-size: 16px;  /* Set your desired default font size */
+    line-height: 30px;
+    border: 0;
+}
+#palm p {
+    font-size: 16px;  /* Set your desired default font size */
+    line-height: 30px;
+    /* margin-bottom: 30px; */
+}
+#palm ul, #palm ol {
+    margin: 0;
+    padding: 0;
+    padding-left: 13px;
+    line-height: initial;
+}
+#palm li {
+    line-height: 24px;
+}
+img {
+    width: auto;
+    max-width: 100%;
+    border-radius: 5px;
+}

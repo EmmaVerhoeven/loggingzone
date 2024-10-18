@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Times BED Times 💌🕯️🛌</title>
+    <style>
+        body {
+            background-color: rgb(54, 120, 219);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #mainContent {
+            text-align: center;
+            /* Ensures form and heading are aligned */
+        }
+
+        form {
+            background-color: red;
+            width: fit-content;
+            /* Adjusts to fit the content width */
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            margin: 0 auto;
+            /* Center the form */
+        }
+
+        input[type="text"] {
+            width: 100%;
+            height: 40px;
+            font-size: 18px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            color: white;
+            background-color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        #confirmationMessage {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mainContent">
+        <h1>Good Times BED Times 💌🕯️🛌</h1>
+        <form id="emailForm">
+            Tell us your story, question, situation, dilemma, or other matter of the heart... <br><br>
+            <input type="text" id="contact" placeholder="this is 100% anonymous!" required>
+            <button type="submit">SUBMIT ❤️‍🩹</button>
+            <div id="confirmationMessage"></div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var contactField = document.getElementById('contact').value;
+            console.log('Contact Field Value: ', contactField); // Log input value
+            var data = {
+                contact: contactField,
+            };
+
+            fetch('https://script.google.com/macros/s/YOUR_WEB_APP_URL/exec', {
+                method: 'POST',
+                body: JSON.stringify(data),
+            })
+                .then(function (response) {
+                    console.log('Response Status:', response.status); // Log response status
+                    if (response.status === 200) {
+                        document.getElementById('contact').value = ''; // Clear the input field
+                        return '';
+                    }
+                })
+                .then(function (text) {
+                    console.log('Success Text:', text); // Log success message
+                    document.getElementById('confirmationMessage').textContent = 'Thank you, we will try to discuss this on next GT🛌T show: 3 Nov 10PM 💌';
+                })
+                .catch(function (error) {
+                    console.error('Error: ', error); // Log error
+                });
+        });
+
+    </script>
+
+</body>
+
+</html>
